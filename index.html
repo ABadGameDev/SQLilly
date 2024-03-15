@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SQLilly</title>
+    <meta name="author" content="Jared Conway">
+    <meta name="keywords" content="SQL, Learning, SQLilly, Learn, MySQL, NoSQL, Postgres">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web application for learning SQL">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="back">
+        <div class="overlay"></div>
+        <div class="column">
+            <h1>SQLilly</h1>
+            <h2>An SQL Learning Assistant</h2>
+        </div>
+        <div class="card">
+            <div class="question">
+                <div id="qst">
+                    Click Next to generate a random SQL question
+                </div>
+                <div class="boxoverlay"></div>
+            </div>
+            <div class="answer">
+                <div id="ans">
+                    Or, click Schema to view the relevant tables for each question
+                </div><div class="boxoverlay"></div>
+            </div>
+            <div class="buttons">
+                <button name="Reveal" onclick="buttons.reveal();">
+                    Reveal
+                    <div class="boxoverlay"></div>
+                </button>
+                <button name="Next" onclick="buttons.next();">
+                    Next
+                    <div class="boxoverlay"></div>
+                </button>
+            </div>
+            <div class="buttons">
+                <button name="Schema" onclick="buttons.schema();">
+                    Schema
+                    <div class="boxoverlay"></div>
+                </button>
+            </div>
+            <div id="schema">
+                <div>
+                Cars(VIN, color, price)
+                Register(VIN, state, date)
+                    </div>
+            </div>
+        </div>
+        <!--
+    <div class="footer">
+            App by Jared Conway <div class="blinker">|</div>
+            -->
+        
+    </div>
+</body>
+</html>
